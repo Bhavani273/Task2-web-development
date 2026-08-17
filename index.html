@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <h2>Student Task Manager</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    
+    <section id="home">
+
+        <div class="hero">
+            <h1>Manage Your Tasks Easily</h1>
+
+            <p>
+                Organize your daily tasks, track your progress
+                and stay productive.
+            </p>
+
+            <a href="#tasks" class="start-btn">
+                Get Started
+            </a>
+        </div>
+
+    </section>
+
+
+    
+    <section id="dashboard">
+
+        <h2>Task Dashboard</h2>
+
+        <div class="dashboard-container">
+
+            <div class="dashboard-card">
+                <h3>Total Tasks</h3>
+                <p id="totalTasks">0</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Completed Tasks</h3>
+                <p id="completedTasks">0</p>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Pending Tasks</h3>
+                <p id="pendingTasks">0</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="tasks">
+
+        <h2>My Tasks</h2>
+
+        <div class="task-container">
+
+            <div class="task-input">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a new task"
+                >
+
+                <button id="addTaskBtn">
+                    Add Task
+                </button>
+
+            </div>
+
+            <ul id="taskList"></ul>
+
+        </div>
+
+    </section>
+
+
+    
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+
+            <div class="form-group">
+
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+                <small id="nameError"></small>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+                <small id="emailError"></small>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    placeholder="Enter your message"
+                ></textarea>
+
+                <small id="messageError"></small>
+
+            </div>
+
+
+            <button type="submit">
+                Send Message
+            </button>
+
+            <p id="successMessage"></p>
+
+        </form>
+
+    </section>
+
+
+    
+    <footer>
+
+        <p>
+            © 2026 Student Task Manager
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
